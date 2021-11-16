@@ -1,0 +1,42 @@
+html{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 100%;
+}
+body{
+    padding: 20px;
+    background-color: #191a2e;
+}
+.button{
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    padding: 15px 30px;
+    border-radius: 4px;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    
+}
+.button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    z-index: -1;
+    transition: all 0.3s linear;
+    width: 0;
+    height: 100%;
+    background-color: #6a5af9;
+   
+}
+.button:hover:before{
+    left: 0;
+    width: 100%;
+    right: auto;
+    
+}
